@@ -1,4 +1,4 @@
-﻿# Focus Time Tracker
+﻿# Chronos
 
 A lightweight VS Code extension that tracks net active coding time per workspace and displays it in the status bar.
 
@@ -55,3 +55,4 @@ In VS Code:
 ## License
 
 MIT
+
