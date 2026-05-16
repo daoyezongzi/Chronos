@@ -1,0 +1,52 @@
+﻿{
+  "name": "focus-time-tracker",
+  "displayName": "Focus Time Tracker",
+  "description": "Track net active coding time per workspace and show it in the VS Code status bar.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<your-org-or-user>/focus-time-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<your-org-or-user>/focus-time-tracker/issues"
+  },
+  "homepage": "https://github.com/<your-org-or-user>/focus-time-tracker#readme",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "time-tracking",
+    "productivity",
+    "status-bar",
+    "workspace"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "focusTimeTracker.showStatus",
+        "title": "Focus Time Tracker: Show Status"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^3.9.1",
+    "typescript": "^5.4.5"
+  }
+}
